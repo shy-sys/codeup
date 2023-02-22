@@ -1,18 +1,27 @@
 @use "global" as *;
 
-.p-header {
-    height: rem(50);
-    background-color: transparent;
-    background-color: $black;
-    z-index: 1000;
+.l-header{
     position: fixed;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.p-header {
+    background-color: $black;
+    height: 5rem;
 }
 
 .p-header__inner {
     height: inherit;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 rem(15);
+    justify-content: space-between;
+}
+
+.p-header__logo {
+    width: 7rem;
+    @include mq(md){
+        width: 9.5rem;
+    }
 }
