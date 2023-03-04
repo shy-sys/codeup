@@ -7,9 +7,19 @@
     right: 0;
 }
 
+.c-logo {
+    width: rem(70);
+    position: relative;
+    z-index: 9999;
+
+    @include mq(md){
+        width: rem(95);
+    }
+}
+
 .p-header {
     background-color: $black;
-    height: 5rem;
+    height: rem(50);
 }
 
 .p-header__inner {
@@ -17,11 +27,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 rem(22);
 }
 
-.p-header__logo {
-    width: 7rem;
-    @include mq(md){
-        width: 9.5rem;
-    }
-}
