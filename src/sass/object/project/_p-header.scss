@@ -1,25 +1,24 @@
 @use "global" as *;
 
-.l-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.c-logo {
-    width: rem(70);
+.header-logo {
+    width: rem(80);
+    max-width: 100%;
+    padding-top: 0.625rem;
+    padding-left: 0.125rem;
     position: relative;
     z-index: 9999;
 
     @include mq(md){
-        width: rem(95);
+        width: rem(100);
+        padding-left: 0;
     }
 }
-
 .p-header {
-    background-color: $black;
+    background-color: rgba(17, 17, 17, 0.5);
     height: rem(50);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
 }
 
 .p-header__inner {
@@ -27,6 +26,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 rem(22);
+    padding: 0 rem(20);
+    @include mq(md){
+        padding-left: 2rem;
+        padding-right: inherit;
+    }
 }
 
+.p-header__drawer {
+    @include mq(md){
+        display: none;
+    }
+}

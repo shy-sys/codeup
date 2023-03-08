@@ -1,0 +1,43 @@
+@use "global" as *;
+
+
+.p-pc-nav {
+    height: inherit;
+    display: none;
+    @include mq(md){
+        display: block;
+    }
+}
+
+.p-pc-nav__items {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    line-height: rem(50);
+}
+
+.p-pc-nav__item {
+    align-items: center;
+    height: inherit;
+}
+
+.p-pc-nav__item a {
+    height: inherit;
+    color: $white;
+    display: grid;
+    place-items: center;
+    padding: 0 1rem;
+    font-size: 1rem;
+    letter-spacing: rem(2);
+}
+
+.p-pc-nav__item.p-pc-nav__item--white {
+    margin-left: 1rem;
+}
+
+.p-pc-nav__item.p-pc-nav__item--white a {
+    background-color: $white;
+    color: $black;
+    padding: 0 2rem;
+}

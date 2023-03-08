@@ -20,7 +20,7 @@
   <!-- GoogleFont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
@@ -30,38 +30,63 @@
 <body>
 <header class="l-header p-header">
   <div class="p-header__inner">
-    <h1 class="c-logo">
-      <a href="#" class="c-logo__link">
-        <img src="./images/image/CodeUps1.svg" alt="ヘッダーロゴ">
+    <h1 class="header-logo">
+      <a href="#" class="header-logo__link">
+        <img src="./images/image/CodeUps.png" alt="ヘッダーロゴ">
       </a>
     </h1>
-    <div class="p-header__drawer c-hamburger js-hamburger">
+    <!-- ハンバーガーアイコン -->
+    <div id="MenuButton" class="p-header__drawer c-hamburger js-hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <nav class="p-header__sp-nav sp-nav ">
-      <ul class="sp-nav__items">
-        <li class="sp-nav__item">
-          <a href="#">トップ</a>
-        </li>
-        <li class="sp-nav__item">
+    <!-- ドロワーメニュー -->
+    <div class="p-header__sp-nav p-sp-nav js-drawer-menu">
+      <ul class="p-sp-nav__items">
+        <li class="p-sp-nav__item">
           <a href="#">お知らせ</a>
         </li>
-        <li class="sp-nav__item">
+        <li class="p-sp-nav__item">
           <a href="#">事業内容</a>
         </li>
-        <li class="sp-nav__item">
+        <li class="p-sp-nav__item">
+          <a href="#">制作実績</a>
+        </li>
+        <li class="p-sp-nav__item">
           <a href="#">企業概要</a>
         </li>
-        <li class="sp-nav__item">
+        <li class="p-sp-nav__item">
           <a href="#">ブログ</a>
         </li>
-        <li class="sp-nav__item">
+        <li class="p-sp-nav__item">
           <a href="#">お問い合わせ</a>
         </li>
       </ul>
-    </nav>
+    </div>
+
+    <div class="p-header__pc-nav p-pc-nav">
+      <ul class="p-pc-nav__items">
+        <li class="p-pc-nav__item">
+          <a href="#">お知らせ</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a href="#">事業内容</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a href="#">制作実績</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a href="#">企業概要</a>
+        </li>
+        <li class="p-pc-nav__item">
+          <a href="#">ブログ</a>
+        </li>
+        <li class="p-pc-nav__item p-pc-nav__item--white">
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 

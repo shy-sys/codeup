@@ -24,14 +24,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
+  $(".js-hamburger").on(click, function () {
     // $(".l-drawer-menu").toggleClass("is-show");
     // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
+    $(".js-drawer-open").toggleClass("is-open");
+    $(".js-drawer-menu").toggleClass("is-open");
     $("html").toggleClass("is-fixed");
-
+    // $(this).toggleClass("is-open");
+    // return false;
   });
+
 
 
 
