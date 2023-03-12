@@ -1,16 +1,15 @@
 @use "global" as *;
 
 .c-hamburger {
-    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     width: rem(24);
     height: rem(13);
     padding-top: ren(14);
     padding-bottom: rem(22);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     cursor: pointer;
+    z-index: 9999;
     @include mq(md) {
         display: none;
     }
@@ -20,21 +19,22 @@
     position: absolute;
     height: rem(2);
     width: rem(24);
-    background: $white;
+    background-color: $white;
     transition: all .3s;
+
+    &:nth-of-type(1) {
+        top: 0;
+    }
+    
+    &:nth-of-type(2) {
+        top: rem(8);
+    }
+    
+    &:nth-of-type(3) {
+        top: rem(16);
+    }
 }
 
-.c-hamburger span:nth-child(1) {
-    top: 0;
-}
-
-.c-hamburger span:nth-child(2) {
-    top: rem(8);
-}
-
-.c-hamburger span:nth-child(3) {
-    top: rem(16);
-}
 
 #MenuButton {
     &.is-open {
@@ -43,15 +43,15 @@
     }
     span {
         &:nth-of-type(1) {
-            transform: rotate(-45deg);
-            top: rem(8);
+            
+            transform: translateY(11px) rotate(-45deg);
+            
         }
         &:nth-of-type(2) {
             opacity: 0;
         }
         &:nth-of-type(3) {
-            transform: rotate(45deg);
-            top: rem(8);
+            transform: translateY(-5px) rotate(45deg);
         }
     }
 }

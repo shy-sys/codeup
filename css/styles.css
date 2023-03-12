@@ -189,7 +189,12 @@ select::-ms-expand {
 }
 
 .c-hamburger {
-  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
   width: 24px;
   width: 1.5rem;
   height: 13px;
@@ -197,17 +202,8 @@ select::-ms-expand {
   padding-top: ren(14);
   padding-bottom: 22px;
   padding-bottom: 1.375rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
   cursor: pointer;
+  z-index: 9999;
 }
 @media screen and (min-width: 768px) {
   .c-hamburger {
@@ -221,21 +217,18 @@ select::-ms-expand {
   height: 0.125rem;
   width: 24px;
   width: 1.5rem;
-  background: #fff;
+  background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-.c-hamburger span:nth-child(1) {
+.c-hamburger span:nth-of-type(1) {
   top: 0;
 }
-
-.c-hamburger span:nth-child(2) {
+.c-hamburger span:nth-of-type(2) {
   top: 8px;
   top: 0.5rem;
 }
-
-.c-hamburger span:nth-child(3) {
+.c-hamburger span:nth-of-type(3) {
   top: 16px;
   top: 1rem;
 }
@@ -247,19 +240,15 @@ select::-ms-expand {
   transition: all 0.5s;
 }
 #MenuButton span:nth-of-type(1) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 8px;
-  top: 0.5rem;
+  -webkit-transform: translateY(11px) rotate(-45deg);
+          transform: translateY(11px) rotate(-45deg);
 }
 #MenuButton span:nth-of-type(2) {
   opacity: 0;
 }
 #MenuButton span:nth-of-type(3) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 8px;
-  top: 0.5rem;
+  -webkit-transform: translateY(-5px) rotate(45deg);
+          transform: translateY(-5px) rotate(45deg);
 }
 
 .header-logo {
