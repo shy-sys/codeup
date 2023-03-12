@@ -35,15 +35,18 @@
         <img src="./images/image/CodeUps.png" alt="ヘッダーロゴ">
       </a>
     </h1>
-    <!-- ハンバーガーアイコン -->
-    <button id="MenuButton" class="p-header__drawer c-hamburger js-hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <!-- ドロワーメニュー -->
-    <div class="p-header__sp-nav p-sp-nav js-drawer-menu">
+  <!-- ハンバーガーアイコン -->
+  <div class="p-header__drawer c-hamburger js-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- ドロワーメニュー -->
+  <nav class="p-header__sp-nav p-sp-nav js-drawer-menu">
       <ul class="p-sp-nav__items">
+        <li class="p-sp-nav__item">
+          <a href="#">トップ</a>
+        </li>
         <li class="p-sp-nav__item">
           <a href="#">お知らせ</a>
         </li>
@@ -63,9 +66,9 @@
           <a href="#">お問い合わせ</a>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <div class="p-header__pc-nav p-pc-nav">
+    <nav class="p-header__pc-nav p-pc-nav">
       <ul class="p-pc-nav__items">
         <li class="p-pc-nav__item">
           <a href="#">お知らせ</a>
@@ -86,11 +89,61 @@
           <a href="#">お問い合わせ</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 </header>
 
 
-
+<!-- contact -->
+<section class="p-contact">
+  <div class="p-contact__inner">
+    <h2 class="p-contact__title">お問い合わせ</h2>
+    <div class="p-contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+    <div class="p-contact__button">
+      <a href="" class="c-button">お問い合わせへ</a>
+    </div>
+  </div>
+</section>
+<!-- pagetop -->
+<div id="pagetop"><a href="#"></a></div>
+<!-- footer -->
+<footer class="l-footer p-footer">
+  <div class="p-footer__inner">
+    <div class="p-footer__content">
+      <div class="p-footer____logo">
+        <a href="#">
+          <img src="./images/image/CodeUps.png" alt="フッターロゴマーク">
+        </a>
+      </div>
+      <nav class="p-footer__nav p-footer-nav">
+        <ul class="p-footer__items">
+          <li class="p-footer__item">
+            <a href="#">トップ</a>
+        </li>
+        <li class="p-footer__item">
+          <a href="#">お知らせ</a>
+        </li>
+        <li class="p-footer__item">
+          <a href="#">事業内容</a>
+        </li>
+        <li class="p-footer__item">
+          <a href="#">制作実績</a>
+        </li>
+        <li class="p-footer__item">
+          <a href="#">企業概要</a>
+        </li>
+        <li class="p-footer__item">
+          <a href="#">ブログ</a>
+        </li>
+        <li class="p-footer__item">
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-footer__copyright">
+      <small>&copy; 2021 CodeUps Inc.</small>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

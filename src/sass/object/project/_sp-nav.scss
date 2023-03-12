@@ -17,8 +17,7 @@
 }
 
 .p-sp-nav.is-open {
-    transform: translate(0);
-    // transition: .3s ease-out;
+    transform: translateX(0);
 }
 
 .p-sp-nav__items {
@@ -37,8 +36,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    padding-top: rem(16);
-    padding-bottom: rem(16);
+    padding: 1rem 0 1rem;
     color: $white;
     font-size: rem(16);
     letter-spacing: rem(2);
