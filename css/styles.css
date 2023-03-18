@@ -292,9 +292,14 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-footer__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inherit;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
   }
 }
 
@@ -432,6 +437,22 @@ select::-ms-expand {
   font-size: 1rem;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
+}
+.p-pc-nav__item a ::after {
+  position: absolute;
+  content: "";
+  bottom: 4px;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  height: 0.0625rem;
+  background: transparent;
+}
+.p-pc-nav__item a:hover, .p-pc-nav__item a.is-active {
+  opacity: 1;
+}
+.p-pc-nav__item a:hover::after, .p-pc-nav__item a.is-active::after {
+  background: #F9F871;
 }
 
 .p-pc-nav__item.p-pc-nav__item--white {

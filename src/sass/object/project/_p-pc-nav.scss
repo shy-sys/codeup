@@ -30,6 +30,23 @@
     padding: 0 1rem;
     font-size: 1rem;
     letter-spacing: rem(2);
+
+    ::after {
+        position: absolute;
+        content: "";
+        bottom: 4px;
+        left: 10%;
+        width: 80%;
+        height: rem(1);
+        background: transparent;
+    }
+    &:hover,
+    &.is-active {
+        opacity: 1.0;
+        &::after {
+            background: $yellow;
+        }
+    }
 }
 
 .p-pc-nav__item.p-pc-nav__item--white {

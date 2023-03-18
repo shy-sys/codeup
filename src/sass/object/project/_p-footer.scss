@@ -1,76 +1,78 @@
 @use "global" as *;
 
 .p-footer {
-
 }
 
 .p-footer__inner {
-    padding: rem(48) 0;
-    @include mq(md) {
-        padding: rem(32) rem(32) rem(32) rem(26);
-    }
+  padding: rem(48) 0;
+  @include mq(md) {
+	padding: rem(32) rem(32) rem(32) rem(26);
+  }
 }
 
 .p-footer__content {
-    display: block;
-    text-align: center;
-    @include mq(md) {
-        display: flex;
-    }
+  display: block;
+  text-align: center;
+  @include mq(md) {
+	display: flex;
+  }
 }
 
 .p-footer__logo {
-    width: rem(70);
-    margin: 0 auto;
+  width: rem(70);
+  margin: 0 auto;
 
-    @include mq(md) {
-        margin: 0;
-    }
+  @include mq(md) {
+	margin: 0;
+  }
 
-    img {
-        width: 100%;
-    }
+  img {
+	width: 100%;
+  }
 }
 
 .p-footer__items {
-    display: block;
-    width: 100%;
-    margin-top: rem(12);
-    margin-left: auto;
+  display: block;
+  width: 100%;
+  margin-top: rem(12);
+  margin-left: auto;
 
-    @include mq(md) {
-        display: flex;
-    }
+  @include mq(md) {
+	display: inherit;
+	justify-content: right;
+	align-items: center;
+	margin: 0;
+  }
 }
 
 .p-footer__item {
-    padding-top: rem(4);
-    padding-bottom: rem(4);
+  padding-top: rem(4);
+  padding-bottom: rem(4);
 
-    @include mq(md) {
-        padding-left: rem(32);
-    }
+  @include mq(md) {
+	padding-left: rem(32);
+  }
 }
 
 .p-footer__item a {
-    letter-spacing: 0.12em;
+  letter-spacing: 0.12em;
 
-    @include mq (md) {
-        letter-spacing: 0.2em;
-        position: relative;
-    }
+  @include mq(md) {
+	letter-spacing: 0.2em;
+	position: relative;
+  }
 }
 
 .p-footer__copyright {
-    text-align: center;
-    padding-top: rem(28);
+  text-align: center;
+  padding-top: rem(28);
 
-    @include mq(md) {
-        padding-top: rem(60);
-    }
+  @include mq(md) {
+	padding-top: rem(60);
+  }
 }
 
 .p-footer__copyright small {
-    font-size: rem(11);
-    letter-spacing: 0.12em;
+  font-size: rem(11);
+  letter-spacing: 0.12em;
 }
