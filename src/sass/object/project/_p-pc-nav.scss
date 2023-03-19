@@ -23,6 +23,7 @@
 }
 
 .p-pc-nav__item a {
+    position: relative;
     height: inherit;
     color: $white;
     display: grid;
@@ -31,30 +32,33 @@
     font-size: 1rem;
     letter-spacing: rem(2);
 
-    ::after {
+    &::after {
         position: absolute;
-        content: "";
-        bottom: 4px;
-        left: 10%;
-        width: 80%;
-        height: rem(1);
-        background: transparent;
+        content: '';
+        left: 0;
+        width: 100%;
+        height: rem(2);
+        background: $yellow;
+        bottom: -1px;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        transition: transform .3s;
     }
-    &:hover,
-    &.is-active {
-        opacity: 1.0;
-        &::after {
-            background: $yellow;
-        }
+    &:hover::after {
+        transform: scale(1, 1);
+        transform-origin: left top;
     }
-}
-
-.p-pc-nav__item.p-pc-nav__item--white {
-    margin-left: 1rem;
 }
 
 .p-pc-nav__item.p-pc-nav__item--white a {
-    background-color: $white;
+    background: $white;
     color: $black;
-    padding: 0 2rem;
+    padding: 0 rem(32);
+    transition: all .3s;
+
+    &:hover {
+        color: $white;
+        background: $black;
+
+    }
 }
