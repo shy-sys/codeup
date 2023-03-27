@@ -1,8 +1,16 @@
 @use "global" as *;
 
+.p-contact {
 
+}
 
-
+.p-contact__inner {
+    width: 100%;
+    padding-right: rem(20);
+    padding-left: rem(20);
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 
@@ -15,18 +23,5 @@
 
     @include mq("md") {
         margin-top: rem(60);
-    }
-}
-
-.c-contact__button a {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    padding: rem(10) 0 rem(11);
-    font-size: rem(20);
-    letter-spacing: 0.15em;
-
-    @include mq("md") {
-        padding: rem(15) rem(98) rem(16);
     }
 }

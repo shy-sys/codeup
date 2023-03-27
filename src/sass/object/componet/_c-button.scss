@@ -50,32 +50,37 @@
 
 
 // お問い合わせボタン(共通)
-.c-button {
+.c-button__text {
     position: relative;
-    display: block;
-    width: 100%;
-    max-width: rem(360);
-    height: rem(60);
-    overflow: hidden;
-    color: $white;
+    display: inline-block;
+    padding: 16px;
+    font-size: rem(20);
     text-decoration: none;
-    border: solid 1px $white;
-    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $white;
+
+        &::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
 
     &::before {
         position: absolute;
         top: 0;
-        right: 0;
         left: 0;
-        bottom: 0;
-        z-index: -1;
-        background-color: $white;
-        box-sizing: border-box;
         content: "";
-        transform: translateX(-100%);
-        transition: transform .5s ease-in-out;
-    }
-    &hover::before {
-        transform: translateX(0);
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $black;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all .3s ease;
+        transition-property: transform;
     }
 }
