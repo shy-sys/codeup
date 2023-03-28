@@ -21,16 +21,18 @@
     width: rem(45);
     height: rem(45);
     background: $white;
-    transition: opacity .3s;
+    transition: all .3s;
 }
 
 .c-pagetop a:hover {
+    background: #333;
     opacity: .3;
 
 }
 
 .c-pagetop a::before {
     position: absolute;
+    color: $white;
     top: rem(18);
     right: rem(10);
     left: rem(10);
@@ -40,28 +42,34 @@
     margin: auto;
     content: '';
     transform: rotate(-45deg);
-    border-top: 2px solid $black;
-    border-right: 2px solid $black;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
 
-    // &hover {
-    //     background: $white;
-    // }
 }
 
 
 // お問い合わせボタン(共通)
 .c-button__text {
     position: relative;
-    display: inline-block;
-    padding: 16px;
+    display: block;
+    padding: rem(11) 0 rem(10);
+    margin: 0 auto;
     font-size: rem(20);
+    letter-spacing: 0.2em;
     text-decoration: none;
+    background: #333;
     color: $white;
     border: 1px solid $white;
     transition: color .3s ease;
 
+    @include mq("md") {
+        width: rem(360);
+        padding: rem(15) rem(98) rem(16);
+        letter-spacing: 0.15em;
+    }
+
     &:hover {
-        color: $white;
+        color: #333;
 
         &::before {
             transform: scaleX(1);
@@ -73,14 +81,15 @@
         position: absolute;
         top: 0;
         left: 0;
-        content: "";
+        content: '';
         display: block;
         width: 100%;
         height: 100%;
-        background: $black;
+        background: $white;
         transform: scaleX(0);
         transform-origin: right;
         transition: all .3s ease;
         transition-property: transform;
+        z-index: -1;
     }
 }

@@ -212,16 +212,18 @@ select::-ms-expand {
   height: 45px;
   height: 2.8125rem;
   background: #fff;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .c-pagetop a:hover {
+  background: #333;
   opacity: 0.3;
 }
 
 .c-pagetop a::before {
   position: absolute;
+  color: #fff;
   top: 18px;
   top: 1.125rem;
   right: 10px;
@@ -237,24 +239,35 @@ select::-ms-expand {
   content: "";
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  border-top: 2px solid #111;
-  border-right: 2px solid #111;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
 }
 
 .c-button__text {
   position: relative;
-  display: inline-block;
-  padding: 16px;
+  display: block;
+  padding: 11px 0 10px;
+  padding: 0.6875rem 0 0.625rem;
+  margin: 0 auto;
   font-size: 20px;
   font-size: 1.25rem;
+  letter-spacing: 0.2em;
   text-decoration: none;
+  background: #333;
   color: #fff;
   border: 1px solid #fff;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+@media screen and (min-width: 768px) {
+  .c-button__text {
+    width: 22.5rem;
+    padding: 0.9375rem 6.125rem 1rem;
+    letter-spacing: 0.15em;
+  }
+}
 .c-button__text:hover {
-  color: #fff;
+  color: #333;
 }
 .c-button__text:hover::before {
   -webkit-transform: scaleX(1);
@@ -270,7 +283,7 @@ select::-ms-expand {
   display: block;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: #fff;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -281,6 +294,7 @@ select::-ms-expand {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  z-index: -1;
 }
 
 .c-hamburger {
@@ -342,8 +356,11 @@ select::-ms-expand {
           transform: rotate(45deg);
 }
 
-.p-contact__inner {
+.p-contact {
   width: 100%;
+}
+
+.p-contact__inner {
   padding-right: 20px;
   padding-right: 1.25rem;
   padding-left: 20px;

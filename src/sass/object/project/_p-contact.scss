@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .p-contact {
+    width: 100%;
 
 }
 
 .p-contact__inner {
-    width: 100%;
     padding-right: rem(20);
     padding-left: rem(20);
     margin-right: auto;
