@@ -52,13 +52,13 @@
 
 .p-pc-nav__item.p-pc-nav__item--white a {
     background: $white;
-    color: $black;
+    color: #333;
     padding: 0 rem(32);
     transition: all .3s;
 
     &:hover {
         color: $white;
-        background: $black;
+        background: #333;
 
     }
 }

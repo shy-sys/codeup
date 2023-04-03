@@ -608,7 +608,7 @@ select::-ms-expand {
 
 .p-pc-nav__item.p-pc-nav__item--white a {
   background: #fff;
-  color: #111;
+  color: #333;
   padding: 0 32px;
   padding: 0 2rem;
   -webkit-transition: all 0.3s;
@@ -616,7 +616,7 @@ select::-ms-expand {
 }
 .p-pc-nav__item.p-pc-nav__item--white a:hover {
   color: #fff;
-  background: #111;
+  background: #333;
 }
 
 .p-sp-nav {
