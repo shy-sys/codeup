@@ -49,6 +49,16 @@
 
 
 // お問い合わせボタン(共通)
+.c-contact__button {
+    width: 100%;
+    text-align: center;
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: rem(60);
+    }
+}
+
 .c-button__text {
     position: relative;
     display: block;
