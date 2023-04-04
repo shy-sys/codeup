@@ -13,12 +13,13 @@
         padding-left: 0;
     }
 }
+
 .p-header {
+    position: fixed;
+    width: 100%;
     background-color: rgba(17, 17, 17, 0.5);
     height: rem(50);
     z-index: 1000;
-    position: fixed;
-    width: 100%;
 }
 
 .p-header__inner {

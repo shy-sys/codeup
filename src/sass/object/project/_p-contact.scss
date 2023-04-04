@@ -4,17 +4,12 @@
     width: 100%;
     background-color: #3d3d3d;
     padding: rem(64) 0;
+    margin-top: rem(120);
 
     @include mq("md") {
         padding: rem(64) 0 rem(150);
+        margin-top: rem(150);
     }
-}
-
-.p-contact__inner {
-    padding-right: rem(20);
-    padding-left: rem(20);
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .p-contact__title {
@@ -26,7 +21,7 @@
 
     @include mq("md") {
         font-size: 1.875rem;
-        
+
     }
 
 }
@@ -40,11 +35,11 @@
     opacity: .2;
     font-family: $second-font-family;
     z-index: 1;
-    // transform: translateX(-50%);
     @include mq("md") {
         font-size: rem(110);
-        top: -75px;
+        top: -65px;
         left: 0;
+        letter-spacing: 0.02em;
     }
 }
 

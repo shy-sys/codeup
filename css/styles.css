@@ -173,7 +173,7 @@ select::-ms-expand {
   display: none;
 }
 
-.inner {
+.l-inner {
   width: 100%;
   padding-right: 20px;
   padding-left: 20px;
@@ -181,7 +181,7 @@ select::-ms-expand {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
-  .inner {
+  .l-inner {
     max-width: 1150px;
     padding-right: 25px;
     padding-left: 25px;
@@ -373,20 +373,14 @@ select::-ms-expand {
   background-color: #3d3d3d;
   padding: 64px 0;
   padding: 4rem 0;
+  margin-top: 120px;
+  margin-top: 7.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-contact {
     padding: 4rem 0 9.375rem;
+    margin-top: 9.375rem;
   }
-}
-
-.p-contact__inner {
-  padding-right: 20px;
-  padding-right: 1.25rem;
-  padding-left: 20px;
-  padding-left: 1.25rem;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .p-contact__title {
@@ -417,8 +411,9 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-contact__title::before {
     font-size: 6.875rem;
-    top: -75px;
+    top: -65px;
     left: 0;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -547,12 +542,12 @@ select::-ms-expand {
 }
 
 .p-header {
+  position: fixed;
+  width: 100%;
   background-color: rgba(17, 17, 17, .5);
   height: 50px;
   height: 3.125rem;
   z-index: 1000;
-  position: fixed;
-  width: 100%;
 }
 
 .p-header__inner {
