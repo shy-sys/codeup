@@ -18,18 +18,37 @@
 }
 
 .p-contact__title {
+    position: relative;
     text-align: center;
     font-size: 1.25rem;
     letter-spacing: 0.2em;
     font-weight: $regular;
 
+    @include mq("md") {
+        font-size: 1.875rem;
+        
+    }
+
 }
 
-.p-contact__title::after {
-    content: 'Content';
+.p-contact__title::before {
+    content: 'Contant';
+    position: absolute;
+    font-size: rem(50);
+    top: -50px;
+    left: 17%;
+    opacity: .2;
+    font-family: $second-font-family;
+    z-index: 1;
+    // transform: translateX(-50%);
+    @include mq("md") {
+        font-size: rem(110);
+        top: -75px;
+        left: 0;
+    }
 }
 
-.p-section__title::after {
+.p-section__title::before {
     color: $yellow;
 }
 
