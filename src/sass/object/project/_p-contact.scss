@@ -37,8 +37,8 @@
     z-index: 1;
     @include mq("md") {
         font-size: rem(110);
-        top: -65px;
-        left: 0;
+        top: -6.25rem;
+        left: -1.875rem;
         letter-spacing: 0.02em;
     }
 }
@@ -52,5 +52,11 @@
     margin-top: 1.25rem;
     letter-spacing: 0.2em;
     text-align: left;
+
+    @include mq("md") {
+        text-align: center;
+        margin-top: 1.5rem;
+        letter-spacing: 0.2em;
+    }
 
 }
