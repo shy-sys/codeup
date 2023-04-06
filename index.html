@@ -26,9 +26,15 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="l-header p-header">
@@ -96,9 +102,29 @@
       </div>
     </header>
 
-    <section></section>
-
-    <section></section>
+    <!-- main -->
+    <div class="top l-main">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./images/top/pc/mv-1.jpg" alt="スライダー画像1" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./images/top/pc/mv-2.jpg" alt="スライダー画像２" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">
+              <img src="./images/top/pc/mv-3.jpg" alt="スライダー画像３" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
 
     <!-- contact -->
     <section class="p-contact">

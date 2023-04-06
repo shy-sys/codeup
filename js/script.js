@@ -30,7 +30,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
   
 
-
+// swiper
+let swipeOption = {
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+}
+new Swiper('.swiper-container', swipeOption);
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
