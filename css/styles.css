@@ -232,17 +232,16 @@ select::-ms-expand {
   width: 2.8125rem;
   height: 45px;
   height: 2.8125rem;
-  background: #fff;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.c-pagetop a:hover {
-  background: #333;
-  opacity: 0.3;
-}
-
 .c-pagetop a::before {
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
   position: absolute;
   color: #fff;
   top: 18px;
@@ -251,7 +250,6 @@ select::-ms-expand {
   right: 0.625rem;
   left: 10px;
   left: 0.625rem;
-  display: block;
   width: 20px;
   width: 1.25rem;
   height: 20px;
@@ -260,8 +258,20 @@ select::-ms-expand {
   content: "";
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  border-top: 2px solid #333;
-  border-right: 2px solid #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-pagetop a:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c-pagetop a:hover::before {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
 .c-contact__button {
