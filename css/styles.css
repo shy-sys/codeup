@@ -209,6 +209,11 @@ select::-ms-expand {
             transform: scale(1.15);
   }
 }
+.l-main {
+  background-position: center center;
+  height: 100vh;
+}
+
 .c-pagetop {
   position: fixed;
   right: 20px;
