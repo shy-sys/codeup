@@ -1,5 +1,54 @@
 @use "global" as *;
 
 .p-top {
+    background-position: center center;
+    height: 100vh;
+}
+
+.p-mv__image {
+    height: inherit;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.p-mv__image::before {
+    position: absolute;
     
 }
+
+.p-mv__main {
+    background-image: url(.);
+}
+
+/* swiper */
+@keyframes zoomUp{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img{ animation: zoomUp 10s linear 0s 1 normal both;  
+}
+.slide-img img{ display: block;
+}
+
+
+//   /* ページネーション */
+// .swiper-pagination {
+//     transform: none;
+//     width: 100%;
+//     @include mq("md") {
+//     transform: translate3d(rem(233), rem(2), 0);
+//     width: auto;
+//     }
+// }
