@@ -188,6 +188,32 @@ select::-ms-expand {
   }
 }
 
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.l-main {
+  background-position: center center;
+  height: 100vh;
+}
+
 .c-pagetop {
   position: fixed;
   right: 20px;
@@ -749,16 +775,6 @@ select::-ms-expand {
 }
 
 /* swiper */
-@-webkit-keyframes zoomUp {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-}
 @keyframes zoomUp {
   0% {
     -webkit-transform: scale(1);
