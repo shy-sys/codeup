@@ -1,66 +1,99 @@
 @use "global" as *;
 
 .p-top {
-    background-position: center center;
-    height: 100vh;
+  background-position: center center;
+  height: 100vh;
 }
 
 .p-mv__image {
-    height: inherit;
-    width: 100%;
-    background-size: cover;
+  height: inherit;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
 
 .p-mv__main {
-    background-image: url(/images/top/sp/sp-mv-1.jpg);
-    @include mq("md") {
-        background-image: url(/images/top/pc/mv-1.jpg);
-    }
+  background-image: url(../../../../images/top/sp/sp-mv-1.png);
+  @include mq("md") {
+    background-image: url(../../../../images/top/pc/pc-mv-1.jpg);
+  }
 }
 
 .p-mv__sub1 {
-    background-image: url(/images/top/sp/sp-mv-2.jpg);
-    @include mq("md") {
-        background-image: url(/images/top/pc/mv-2.jpg);
-    }
+  background-image: url(../../../../images/top/sp/sp-mv-2.jpg);
+  @include mq("md") {
+    background-image: url(../../../../images/top/pc/pc-mv-2.jpg);
+  }
 }
 
 .p-mv__sub2 {
-    background-image: url(/images/top/sp/sp-mv-3.jpg);
-    @include mq("md") {
-        background-image: url(/images/top/pc/mv-3.jpg);
-    }
+  background-image: url(../../../../images/top/sp/sp-mv-3.jpg);
+  @include mq("md") {
+    background-image: url(../../../../images/top/pc/pc-mv-3.jpg);
+  }
 }
 
 /* swiper */
-@keyframes zoomUp{
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.15);
-    }
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
 }
 
 .swiper-wrapper {
-    align-items: center;
+  align-items: center;
 }
 
 .swiper-slide-active .slide-img,
 .swiper-slide-duplicate-active .slide-img,
-.swiper-slide-prev .slide-img{ animation: zoomUp 10s linear 0s 1 normal both;  
+.swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
 }
-.slide-img img{ display: block;
+.slide-img img {
+  display: block;
 }
-
 
 .p-top-lead {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  @include mq("md") {
+    top: 49%;
+  transform: translate(-50%, -49%);
+  }
+}
+
+.p-top-title {
+  font-size: 1.75rem;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+
+  @include mq("md") {
+    font-size: 3.125rem;
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+  }
+}
+
+.p-top-subtitle {
+  font-size: 1.25rem;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  padding-top: 1.5rem;
+
+  @include mq("md") {
+    font-size: 1.562rem;
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    padding-top: 1.5rem;
+  }
 }
 
 //   /* ページネーション */
