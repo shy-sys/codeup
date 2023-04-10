@@ -9,16 +9,27 @@
     height: inherit;
     width: 100%;
     background-size: cover;
-    position: relative;
-}
-
-.p-mv__image::before {
-    position: absolute;
-    
 }
 
 .p-mv__main {
-    background-image: url(.);
+    background-image: url(/images/top/sp/sp-mv-1.jpg);
+    @include mq("md") {
+        background-image: url(/images/top/pc/mv-1.jpg);
+    }
+}
+
+.p-mv__sub1 {
+    background-image: url(/images/top/sp/sp-mv-2.jpg);
+    @include mq("md") {
+        background-image: url(/images/top/pc/mv-2.jpg);
+    }
+}
+
+.p-mv__sub2 {
+    background-image: url(/images/top/sp/sp-mv-3.jpg);
+    @include mq("md") {
+        background-image: url(/images/top/pc/mv-3.jpg);
+    }
 }
 
 /* swiper */
@@ -42,6 +53,15 @@
 .slide-img img{ display: block;
 }
 
+
+.p-top-lead {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 //   /* ページネーション */
 // .swiper-pagination {
