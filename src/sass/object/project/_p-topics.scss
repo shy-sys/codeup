@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-topics {
+    margin-top: rem(25);
+    @include mq("md") {
+        margin-top: rem(30);
+    }
+}
+
+.p-topics__news {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-topics__info {
+    display: flex;
+    align-items: center;
+
+}
+
+.p-topics__btn {
+width: 100%;
+text-align: center;
+margin-top: rem(28);
+
+@include mq("md") {
+    margin-top: rem(60);
+}
+}

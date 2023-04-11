@@ -39,7 +39,7 @@
         width: 100%;
         height: rem(2);
         background: $yellow;
-        bottom: -1px;
+        bottom: 0.5rem;
         transform: scale(0, 1);
         transform-origin: right top;
         transition: transform .3s;

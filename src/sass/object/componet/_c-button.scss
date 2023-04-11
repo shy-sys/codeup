@@ -65,7 +65,7 @@
     }
 }
 
-.c-button__text {
+.c-button {
     position: relative;
     display: block;
     padding: rem(11) 0 rem(10);
@@ -92,8 +92,9 @@
             transform-origin: left;
         }
     }
+}
 
-    &::before {
+.c-button::before {
         position: absolute;
         top: 0;
         left: 0;
@@ -108,4 +109,3 @@
         transition-property: transform;
         z-index: -1;
     }
-}
