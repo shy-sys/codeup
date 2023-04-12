@@ -16,7 +16,28 @@
 .p-topics__info {
     display: flex;
     align-items: center;
+    
+}
 
+.p-topics__date {
+    letter-spacing: 0.02em;
+}
+
+.p-topics__category {
+    border: 1px solid $white;
+    display: inline-block;
+    font-size: rem(14);
+    padding: rem(6) rem(20);
+    margin-left: rem(32);
+
+    @include mq("md") {
+        margin-left: rem(48);
+    }
+}
+
+.p-topics__text {
+    margin-top: rem(16);
+    width: 100%;
 }
 
 .p-topics__btn {
