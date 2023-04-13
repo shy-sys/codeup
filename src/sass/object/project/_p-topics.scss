@@ -11,12 +11,19 @@
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
+    @include mq("md") {
+        flex-wrap: nowrap;
+        margin: auto;
+    }
 }
 
 .p-topics__info {
     display: flex;
     align-items: center;
-    
+    @include mq("md") {
+        align-items: flex-start;
+        display: flex;
+    }
 }
 
 .p-topics__date {
@@ -32,12 +39,17 @@
 
     @include mq("md") {
         margin-left: rem(48);
+        white-space: nowrap;
     }
 }
 
 .p-topics__text {
     margin-top: rem(16);
     width: 100%;
+    @include mq("md") {
+        margin-left: rem(60);
+        margin-top: 0;
+    }
 }
 
 .p-topics__btn {
@@ -46,6 +58,8 @@ text-align: center;
 margin-top: rem(28);
 
 @include mq("md") {
-    margin-top: rem(60);
+    margin-left: rem(50);
+    margin-right: 0;
+    margin-top: 0;
 }
 }
