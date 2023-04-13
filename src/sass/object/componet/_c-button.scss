@@ -54,58 +54,126 @@
 }
 
 
-// お問い合わせボタン(共通)
+// メインボタン
 .c-contact__button {
     width: 100%;
-    text-align: center;
-    margin-top: rem(49);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(40);
 
     @include mq("md") {
         margin-top: rem(60);
+        max-width: 22.5rem;
     }
 }
 
 .c-button {
-    position: relative;
-    display: block;
-    padding: rem(11) 0 rem(10);
-    margin: 0 auto;
-    font-size: rem(20);
-    letter-spacing: 0.2em;
-    text-decoration: none;
-    background: #333;
-    color: $white;
+    width: 100%;
+    background-color: #333;
     border: 1px solid $white;
-    transition: color .3s ease;
-
-    @include mq("md") {
-        width: rem(360);
-        padding: rem(15) rem(98) rem(16);
-        letter-spacing: 0.15em;
-    }
-
-    &:hover {
-        color: #333;
-
-        &::before {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-    }
+    display: block;
+    font-size: rem(20);
+    max-width: rem(335);
+    letter-spacing: 0.2em;
+    padding: rem(10) 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: .3s ease-in-out;
+    z-index: 11;
 }
 
 .c-button::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: $white;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: all .3s ease;
-        transition-property: transform;
-        z-index: -1;
+    background-color: $white;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .3s ease-in-out;
+    z-index: -1;
+}
+
+.c-button:hover {
+    color: #333;
+    transition: .3s ease-in-out;
+}
+
+.c-button:hover::before {
+    transform: translateX(0);
+    transition: .3s ease-in-out;
+}
+
+.c-button.c-button--sp {
+    display: block;
+    @include mq("md") {
+        display: none;
     }
+}
+
+.c-button.c-button--pc {
+    display: none;
+    @include mq("md") {
+        display: block;
+    }
+}
+
+
+    // サブボタン
+.c-button--sub {
+    width: 100%;
+    background-color: #333;
+    border: 1px solid $white;
+    color: $white;
+    display: block;
+    font-size: rem(20);
+    max-width: rem(335);
+    letter-spacing: 0.2em;
+    padding: rem(10) 0;
+    overflow: hidden;
+    position: relative;
+    transition: .3s ease-in-out;
+    z-index: 11;
+
+    @include mq("md") {
+        background-color: $white;
+        color: #333;
+        font-size: rem(16);
+        padding: 0.187rem 0;
+    }
+}
+
+.c-button--sub::before {
+    background-color: $white;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .3s ease-in-out;
+    z-index: -1;
+
+    @include mq("md") {
+        background-color: #333;
+    }
+
+}
+
+.c-button--sub:hover {
+    color: #333;
+    transition: .3s ease-in-out;
+
+    @include mq("md") {
+        color: $white;
+    }
+
+}
+
+.c-button--sub:hover::before {
+    transform: translateX(0);
+    transition: .3s ease-in-out;
+}
