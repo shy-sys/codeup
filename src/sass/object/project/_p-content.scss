@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.l-content {
+    margin-top: rem(100);
+
+}
+
+.p-content {
+    padding-top: rem(50);
+}
+
+
+.p-content__title {
+    position: relative;
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 0.2em;
+    font-weight: $regular;
+
+    @include mq("md") {
+        font-size: 1.875rem;
+
+    }
+
+}
+
+.p-content__title::before {
+    content: 'Content';
+    position: absolute;
+    font-size: rem(50);
+    top: -50px;
+    left: 17%;
+    opacity: .2;
+    font-family: $second-font-family;
+    z-index: 1;
+    @include mq("md") {
+        font-size: rem(110);
+        top: -6.25rem;
+        left: -1.875rem;
+        letter-spacing: 0.02em;
+    }
+}
+
+.p-section__title::before {
+    color: $yellow;
+}
