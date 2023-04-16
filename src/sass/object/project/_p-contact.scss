@@ -1,18 +1,15 @@
 @use "global" as *;
 
 .p-contact {
-    width: 100%;
     background-color: #3d3d3d;
     padding: rem(64) 0;
-    margin-top: rem(120);
 
     @include mq("md") {
         padding: rem(64) 0 rem(150);
-        margin-top: rem(150);
     }
 }
 
-.p-contact__title {
+.p-contact-title {
     position: relative;
     text-align: center;
     font-size: 1.25rem;
@@ -21,30 +18,29 @@
 
     @include mq("md") {
         font-size: 1.875rem;
-
     }
-
 }
 
-.p-contact__title::before {
-    content: 'Contant';
+.p-section-title--contact::before {
+    color: $yellow;
+    content: 'contant';
+    display: block;
     position: absolute;
     font-size: rem(50);
-    top: -50px;
-    left: 17%;
+    top: -15px;
+    left: 50%;
     opacity: .2;
+    transform: translate(-50%, -50%);
     font-family: $second-font-family;
+    text-transform: capitalize;//先頭文字のみ大文字
     z-index: 1;
     @include mq("md") {
         font-size: rem(110);
-        top: -6.25rem;
-        left: -1.875rem;
+        top: 55%;
+        left: -2%;
+        transform: translate(0%, -70%);
         letter-spacing: 0.02em;
     }
-}
-
-.p-section__title::before {
-    color: $yellow;
 }
 
 

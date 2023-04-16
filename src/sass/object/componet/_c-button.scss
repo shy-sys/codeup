@@ -8,6 +8,7 @@
     bottom: rem(40);
     text-indent: -9999;
     margin: 0;
+    z-index: 100;
 
     @include mq("md") {
         right: rem(30);

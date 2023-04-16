@@ -2,7 +2,6 @@
 
 .l-content {
     margin-top: rem(100);
-
 }
 
 .p-content {
@@ -10,7 +9,7 @@
 }
 
 
-.p-content__title {
+.p-content-title {
     position: relative;
     text-align: center;
     font-size: 1.25rem;
@@ -19,28 +18,112 @@
 
     @include mq("md") {
         font-size: 1.875rem;
-
     }
-
 }
 
-.p-content__title::before {
-    content: 'Content';
+.p-section-title--content::before {
+    color: $yellow;
+    content: 'content';
+    display: block;
     position: absolute;
     font-size: rem(50);
-    top: -50px;
-    left: 17%;
+    top: -50%;
+    left: 50%;
     opacity: .2;
+    transform: translate(-50%, -50%);
     font-family: $second-font-family;
+    text-transform: capitalize;//先頭文字のみ大文字
     z-index: 1;
     @include mq("md") {
         font-size: rem(110);
-        top: -6.25rem;
-        left: -1.875rem;
+        top: 88%;
+        left: 25%;
+        transform: translate(-50%, -50%);
         letter-spacing: 0.02em;
     }
 }
 
-.p-section__title::before {
-    color: $yellow;
+.p-content__grid {
+    display: grid;
+    grid-template-columns: 50% 50%;//列のトラックサイズ
+    grid-template-rows: 50% 50%;//行のトラックサイズ
+    margin-top: rem(48);
+
+    @include mq("md") {
+        display: flex;
+        justify-content: center;
+        margin-top: rem(48);
+    }
+}
+
+.p-content-items {
+    position: relative;
+}
+
+.p-content-item__card.sp {
+    display: block;
+
+    @include mq("md") {
+        display: none;
+    }
+}
+
+.p-content-item__card.pc {
+    display: none;
+
+    @include mq("md") {
+        display: block;
+    }
+}
+
+.p-content-item__card {
+    max-width: 20rem;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.p-content-item__card::after {
+    position: absolute;
+    background-color: $white;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.p-content-item__card:hover::after {
+    opacity: 0.6;
+    transition: .3s ease-in-out;
+}
+
+.p-content-item__card:hover {
+    opacity: 0.6;
+}
+
+.p-content-item__text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    @include mq("md") {
+
+    }
+}
+
+.p-content-item__text p {
+    font-size: rem(20);
+    letter-spacing: 0.15em;
+
+    @include mq("md") {
+        font-size: rem(25);
+        letter-spacing: 0.15em;
+    }
 }
