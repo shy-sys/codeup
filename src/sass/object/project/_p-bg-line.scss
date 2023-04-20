@@ -1,0 +1,42 @@
+@use "global" as *;
+
+//line
+.p-bg-line {
+    position: relative;
+    z-index: -1;
+}
+
+.p-bg-line__first,
+.p-bg-line__second {
+    max-width: rem(1280);
+    position: relative;
+    width: 100%;
+}
+
+.p-bg-line__first::before {
+    background-color: $yellow;
+	position: absolute;
+	content: "";
+	height: rem(1);
+	left: 0;
+	top: rem(130);
+	transform: rotate(61.1deg);
+	transform-origin: left top;
+	width: 201vw;
+
+    @include mq("md") {
+        left: 0;
+	    top: rem(75);
+	    transform: rotate(45deg);
+	    width: 120vw;
+    }
+}
+
+.p-bg-line__second::before {
+    background-color: $yellow;
+	position: absolute;
+	content: "";
+	height: rem(1);
+	left: 0;
+	top: rem(130);
+}

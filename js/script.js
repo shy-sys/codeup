@@ -42,6 +42,8 @@ let swipeOption = {
 }
 new Swiper('.swiper-container', swipeOption);
 
+//slide(works)
+
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
