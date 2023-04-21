@@ -1,5 +1,18 @@
 @use "global" as *;
 
+//works
+.c-works__btn {
+    margin-top: rem(16);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(335);
+    width: 100%;
+
+    @include mq("md") {
+        margin-top: rem(48);
+        text-align: left;
+    }
+}
 
 // 上に戻るボタン
 .c-pagetop {

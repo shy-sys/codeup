@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.l-words {
-    position: relative;
-}
-
 .p-works {
     margin-top: rem(70);
 
@@ -83,10 +79,6 @@
     }
 }
 
-.swiper-wrapper {
-    align-items: center;
-}
-
 .p-works__items {
     display: block;
     align-items: center;
@@ -114,6 +106,7 @@
     content: "";
     display: block;
     padding-top: 69.838%;
+    // background-image: url(.../images/works/mask.jpg);
 }
 
 .works__imagesslide img {
@@ -125,6 +118,29 @@
     object-fit: cover;
 }
 
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-pagination {
+    transform: none;
+    width: 100%;
+    @include mq("md") {
+        transform: translate3d(rem(235), rem(2), 0);
+        width: auto;
+    }
+}
+
+// .swiper-pagination-bullet {
+//     background: #C4C4C4;
+// }
+
+// .swiper-pagination-bullet + .swiper-pagination-bullet {
+//     margin-left: rem(11);
+// }
+// .swiper-pagination-bullet-active {
+//     background: #F9F871;
+// }
 
 .p-works__items--lead {
     padding: rem(20) rem(24) rwm(20);
@@ -164,18 +180,5 @@
         letter-spacing: 0.05em;
         line-height: 2;
         font-size: rem(16);
-    }
-}
-
-.p-works__btn {
-    margin-top: rem(16);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: rem(335);
-    width: 100%;
-
-    @include mq("md") {
-        margin-top: rem(48);
-        text-align: left;
     }
 }

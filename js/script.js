@@ -31,7 +31,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   
 
 // swiper
-let swipeOption = {
+var swiper = new Swiper(".top-swiper", {
   loop: true,
   effect: 'fade',
   autoplay: {
@@ -39,10 +39,16 @@ let swipeOption = {
     disableOnInteraction: false,
   },
   speed: 2000,
-}
-new Swiper('.swiper-container', swipeOption);
+});
 
 //slide(works)
+var worksSwiper = new Swiper(".works-swiper", {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+});
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
@@ -56,4 +62,6 @@ new Swiper('.swiper-container', swipeOption);
     return false;
   });
 
+
+  new WOW().init();
 });
