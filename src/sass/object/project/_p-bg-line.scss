@@ -17,18 +17,18 @@
     background-color: $yellow;
 	position: absolute;
 	content: "";
-	height: rem(1);
+	height: rem(1.5);
 	left: 0;
-	top: rem(130);
+	top: rem(50);
 	transform: rotate(61.1deg);
 	transform-origin: left top;
 	width: 201vw;
 
     @include mq("md") {
         left: 0;
-	    top: rem(75);
-	    transform: rotate(45deg);
-	    width: 120vw;
+		top: rem(75);
+		transform: rotate(45deg);
+		width: 120vw;
     }
 }
 
@@ -36,7 +36,17 @@
     background-color: $yellow;
 	position: absolute;
 	content: "";
-	height: rem(1);
-	left: 0;
-	top: rem(130);
+	height: rem(1.5);
+	right: rem(150);
+	top: 0;
+	transform: rotate(-70deg);
+	transform-origin: right top;
+	width: 201vw;
+
+	@include mq("md") {
+		right: 0;
+		top: 0;
+		transform: rotate(-45deg);
+		width: 120vw;
+	}
 }

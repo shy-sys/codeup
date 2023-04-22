@@ -63,5 +63,4 @@ var worksSwiper = new Swiper(".works-swiper", {
   });
 
 
-  new WOW().init();
 });

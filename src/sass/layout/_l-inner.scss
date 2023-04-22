@@ -13,3 +13,13 @@
     padding-left: $padding-pc;
   }
 }
+
+.l-content,
+.l-works,
+.l-overview {
+  margin-top: rem(70);
+
+    @include mq("md") {
+        margin-top: rem(100);
+    }
+}

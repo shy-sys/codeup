@@ -23,19 +23,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.2.4/swiper-bundle.min.css">
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.2.4/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="l-header p-header">
@@ -162,7 +158,7 @@
     </div>
     
     <!-- content -->
-    <section class="p-content l-content">
+    <section class="p-content l-content" id="content">
       <div class="p-content-title p-section-title--content">事業内容</div>
       <div class="p-content__grid">
         <div class="p-content__box p-content-items">
@@ -233,14 +229,14 @@
     </section>
 
     <!-- works -->
-    <section class="p-works l-works">
+    <section class="p-works l-works" id="works">
       <div class="p-works-title p-section-title--works">制作実績</div>
       <div class="p-works__contents top-works">
         <div class="p-works__background"></div>
         <div class="p-works__wrapper">
           <div class="p-works__items">
             <div class="p-works__items--swiper">
-              <div class="swiper-container works-swiper">
+              <div class="swiper works-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                   <div class="works__imagesslide">
@@ -258,9 +254,9 @@
                   </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-pagination js-works-pagination"></div>
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
             <div class="p-works__items--lead">
               <div class="p-works__item--title">メインタイトルが入ります</div>
               <div class="p-works__item--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
@@ -277,7 +273,18 @@
     <div class="p-bg-line">
       <div class="p-bg-line__second"></div>
     </div>
+
     <!-- overview -->
+    <section class="p-overview l-overview" id="overview">
+      <div class="l-inner p-overview__inner">
+        <div class="p-overview-title p-section-title--overview">企業概要</div>
+        <div class="p-overview__contents">
+        <div class="p-overview__background"></div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- blog -->
     
     <!-- contact -->
