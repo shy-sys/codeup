@@ -30,23 +30,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
   
 
-// swiper
-var swiper = new Swiper(".swiper-zoom-container", {
+// mainviewswiper
+let swipeOption = {
   loop: true,
   effect: 'fade',
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
   },
-  speed: 2000,
-});
 
-//slide(works)
-var worksSwiper = new Swiper(".works-swiper", {
-  loop: true,
+}
+new Swiper('.js-mainview-swiper', swipeOption);
+
+//works-swiper
+var swiper = new Swiper(".js-works-swiper", {
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true
+    el: ".js-works-pagination",
+    type: 'bullets',
+    clickable: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 3000,
   },
 });
 

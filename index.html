@@ -101,51 +101,51 @@
     </header>
 
     <!-- main -->
-    <div class="p-main" id="main">
-      <div class="swiper swiper-zoom-container">
+    <section class="p-mainview" id="mainview">
+      <div class="swiper js-mainview-swiper">
         <div class="swiper-wrapper">
-          <div class="p-top">
-            <div class="p-top__image p-top__image--sub"></div>
-            <div class="p-top__lead">
-              <div class="p-top__lead--title">メインタイトルが入ります</div>
-              <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
-            </div>
-          </div>
-
           <!-- slide -->
           <div class="swiper-slide">
-            <div class="p-top">
-              <div class="p-top__image p-top__image--one"></div>
-              <div class="p-top__lead">
-                <div class="p-top__lead--title">メインタイトルが入ります</div>
-                <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
+              <div class="slide-img p-mainview__image--one sp">
+                <img src="./image/main/sp/main.sp1.jpg" alt="">
               </div>
-            </div>
+              <div class="slide-img p-mainview__image--one pc">
+                <img src="./image/main/pc/main.pc1.jpg" alt="">
+              </div>
+              <div class="p-mainview__lead">
+                <div class="p-mainview__lead--title">メインタイトルが入ります</div>
+                <div class="p-mainview__lead--subtitle">サブタイトルが入ります</div>
+              </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="p-top">
-              <div class="p-top__image p-top__image--two"></div>
-              <div class="p-top__lead">
-                <div class="p-top__lead--title">メインタイトルが入ります</div>
-                <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
+              <div class="slide-img p-mainview__image--two sp">
+                <img src="./image/main/sp/main.sp2.jpg" alt="">
               </div>
-            </div>
+              <div class="slide-img p-mainview__image--two pc">
+                <img src="./image/main/pc/main.pc2.jpg" alt="">
+              </div>
+              <div class="p-mainview__lead">
+                <div class="p-mainview__lead--title">メインタイトルが入ります</div>
+                <div class="p-mainview__lead--subtitle">サブタイトルが入ります</div>
+              </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="p-top">
-              <div class="p-top__image p-top__image--three"></div>
-              <div class="p-top__lead">
-                <div class="p-top__lead--title">メインタイトルが入ります</div>
-                <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
+              <div class="slide-img p-mainview__image--three sp">
+                <img src="./image/main/sp/main.sp3.jpg" alt="">
               </div>
-            </div>
+              <div class="slide-img p-mainview__image--three pc">
+                <img src="./image/main/pc/main.pc3.jpg" alt="">
+              </div>
+              <div class="p-mainview__lead">
+                <div class="p-mainview__lead--title">メインタイトルが入ります</div>
+                <div class="p-mainview__lead--subtitle">サブタイトルが入ります</div>
+              </div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- topics -->
     <section class="p-topics l-topics" id="news">
@@ -246,39 +246,31 @@
     <!-- works -->
     <section class="p-works l-works" id="works">
       <div class="p-works-title p-section-title--works">制作実績</div>
-      <div class="p-works__contents p-top-works">
-        <div class="p-works__background"></div>
-        <div class="p-works__wrapper">
-          <div class="p-works__items">
-            <div class="p-works__items--swiper">
-              <div class="swiper works-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                  <div class="works__imagesslide">
-                    <img src="./image/works/works1.jpg" alt="制作実績1">
-                  </div>
-                  </div>
-                  <div class="swiper-slide">
-                  <div class="works__imagesslide">
-                    <img src="./image/works/works2.jpg" alt="制作実績2">
-                  </div>
-                  </div>
-                  <div class="swiper-slide">
-                  <div class="works__imagesslide">
-                    <img src="./image/works/works3.png" alt="制作実績3">
-                  </div>
-                  </div>
+      <div class="p-works__contents">
+        <div class="p-works__body l-inner">
+          <div class="p-works__image">
+            <!-- swiper -->
+            <div class="swiper js-works-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/works/works1.jpg" alt="制作実績1">
                 </div>
-              <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                  <img src="./image/works/works2.jpg" alt="制作実績2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/works/works3.png" alt="制作実績3">
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-            <div class="p-works__items--lead">
-              <div class="p-works__item--title">メインタイトルが入ります</div>
-              <div class="p-works__item--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+          <div class="p-works__lead">
+            <div class="p-works__lead--title">メインタイトルが入ります</div>
+              <div class="p-works__lead--text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
               <div class="c-works__button">
                 <a href="#" class="c-button">詳しく見る</a>
               </div>
-            </div>
           </div>
         </div>
       </div>

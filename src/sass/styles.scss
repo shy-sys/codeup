@@ -4,11 +4,12 @@
 @use "global" as *;
 
 
+
 body {
     background: $black;
     color: $white;
 }
 
-// * {
-//     outline: 2px solid blue;
-// }
+* {
+    outline: 2px solid red;
+}
