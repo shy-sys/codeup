@@ -20,14 +20,14 @@
 	height: rem(1.5);
 	left: 0;
 	top: rem(50);
-	transform: rotate(61.1deg);
+	transform: rotate(61deg);
 	transform-origin: left top;
 	width: 201vw;
 
     @include mq("md") {
         left: 0;
-		top: rem(75);
-		transform: rotate(45deg);
+		top: rem(-25);
+		transform: rotate(40deg);
 		width: 120vw;
     }
 }
@@ -37,16 +37,16 @@
 	position: absolute;
 	content: "";
 	height: rem(1.5);
-	right: rem(150);
+	right: rem(158);
 	top: 0;
-	transform: rotate(-70deg);
+	transform: rotate(-75deg);
 	transform-origin: right top;
-	width: 201vw;
+	width: 225vw;
 
 	@include mq("md") {
 		right: 0;
-		top: 0;
+		top: rem(-100);
 		transform: rotate(-45deg);
-		width: 120vw;
+		width: 135vw;
 	}
 }

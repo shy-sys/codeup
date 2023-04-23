@@ -16,7 +16,8 @@
 
 .l-content,
 .l-works,
-.l-overview {
+.l-overview,
+.l-blog {
   margin-top: rem(70);
 
     @include mq("md") {
