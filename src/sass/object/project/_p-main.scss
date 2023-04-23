@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.p-main {
+  background-position: center center;
+  height: 100vh;
+}
+
+.p-top__image {
+  height: inherit;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.p-top__image::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+  background-image: url(../../../../image/mask/mask.jpg);
+
+  @include mq("md") {
+  background-image: url(../../../../image/mask/mask.jpg);
+  }
+}
+
+.p-top__image--one {
+  background-image: url(../../../../image/main/sp/main.sp1.jpg);
+
+  @include mq("md") {
+    background-image: url(../../../../image/main/pc/main.pc1.jpg);
+  }
+}
+
+.p-top__image--two {
+  background-image: url(../../../../image/main/sp/main.sp2.jpg);
+
+  @include mq("md") {
+    background-image: url(../../../../image/main/pc/main.pc2.jpg);
+}
+}
+
+.p-top__image--three {
+  background-image: url(../../../../image/main/sp/main.sp3.jpg);
+
+  @include mq("md") {
+    background-image: url(../../../../image/main/pc/main.pc3.jpg);
+}
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.p-top__lead {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  @include mq("md") {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.p-top__lead--title {
+  font-size: rem(28);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+
+  @include mq("md") {
+    font-size: rem(50);
+  }
+}
+
+.p-top__lead--subtitle {
+  color: $white;
+  font-size: rem(20);
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+  margin-top: rem(24);
+}

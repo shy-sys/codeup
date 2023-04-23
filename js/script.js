@@ -31,7 +31,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   
 
 // swiper
-var swiper = new Swiper(".top-swiper", {
+var swiper = new Swiper(".swiper-zoom-container", {
   loop: true,
   effect: 'fade',
   autoplay: {

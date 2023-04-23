@@ -48,51 +48,52 @@
           <span></span>
         </div>
         <!-- ドロワーメニュー -->
+        <!-- sp -->
         <nav class="p-header__sp-nav p-sp-nav js-drawer-menu">
           <ul class="p-sp-nav__items">
             <li class="p-sp-nav__item">
               <a href="#">トップ</a>
             </li>
             <li class="p-sp-nav__item">
-              <a href="#">お知らせ</a>
+              <a href="#news">お知らせ</a>
             </li>
             <li class="p-sp-nav__item">
-              <a href="#">事業内容</a>
+              <a href="#content">事業内容</a>
             </li>
             <li class="p-sp-nav__item">
-              <a href="#">制作実績</a>
+              <a href="#works">制作実績</a>
             </li>
             <li class="p-sp-nav__item">
-              <a href="#">企業概要</a>
+              <a href="#overview">企業概要</a>
             </li>
             <li class="p-sp-nav__item">
-              <a href="#">ブログ</a>
+              <a href="#blog">ブログ</a>
             </li>
             <li class="p-sp-nav__item">
-              <a href="#">お問い合わせ</a>
+              <a href="#contact">お問い合わせ</a>
             </li>
           </ul>
         </nav>
-
+        <!-- pc -->
         <nav class="p-header__pc-nav p-pc-nav">
           <ul class="p-pc-nav__items">
             <li class="p-pc-nav__item">
-              <a href="#">お知らせ</a>
+              <a href="#news">お知らせ</a>
             </li>
             <li class="p-pc-nav__item">
-              <a href="#">事業内容</a>
+              <a href="#content">事業内容</a>
             </li>
             <li class="p-pc-nav__item">
-              <a href="#">制作実績</a>
+              <a href="#works">制作実績</a>
             </li>
             <li class="p-pc-nav__item">
-              <a href="#">企業概要</a>
+              <a href="#overview">企業概要</a>
             </li>
             <li class="p-pc-nav__item">
-              <a href="#">ブログ</a>
+              <a href="#blog">ブログ</a>
             </li>
             <li class="p-pc-nav__item p-pc-nav__item--white">
-              <a href="#">お問い合わせ</a>
+              <a href="#contact">お問い合わせ</a>
             </li>
           </ul>
         </nav>
@@ -100,40 +101,54 @@
     </header>
 
     <!-- main -->
-    <!-- <div class="p-top">
-      <div class="swiper-container">
+    <div class="p-main" id="main">
+      <div class="swiper swiper-zoom-container">
         <div class="swiper-wrapper">
+          <div class="p-top">
+            <div class="p-top__image p-top__image--sub"></div>
+            <div class="p-top__lead">
+              <div class="p-top__lead--title">メインタイトルが入ります</div>
+              <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
+            </div>
+          </div>
+
+          <!-- slide -->
           <div class="swiper-slide">
-            <div class="slide-img">
-              <div class="p-mv__image p-mv__main"></div>
-              <div class="p-top-lead">
-                <h2 class="p-top-title">メインタイトルが入ります</h2>
-                <p class="p-top-subtitle">サブタイトルが入ります</p>
+            <div class="p-top">
+              <div class="p-top__image p-top__image--one"></div>
+              <div class="p-top__lead">
+                <div class="p-top__lead--title">メインタイトルが入ります</div>
+                <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
               </div>
             </div>
           </div>
 
-            <div class="slide-img">
-              <div class="p-mv__image p-mv__sub1"></div>
-              <div class="p-top-lead">
-                <h2 class="p-top-title">メインタイトルが入ります</h2>
-                <p class="p-top-subtitle">サブタイトルが入ります</p>
+          <div class="swiper-slide">
+            <div class="p-top">
+              <div class="p-top__image p-top__image--two"></div>
+              <div class="p-top__lead">
+                <div class="p-top__lead--title">メインタイトルが入ります</div>
+                <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
               </div>
             </div>
+          </div>
 
-            <div class="slide-img">
-              <div class="p-mv__image p-mv__sub2"></div>
-              <div class="p-top-lead">
-                <h2 class="p-top-title">メインタイトルが入ります</h2>
-                <p class="p-top-subtitle">サブタイトルが入ります</p>
+          <div class="swiper-slide">
+            <div class="p-top">
+              <div class="p-top__image p-top__image--three"></div>
+              <div class="p-top__lead">
+                <div class="p-top__lead--title">メインタイトルが入ります</div>
+                <div class="p-top__lead--subtitle">サブタイトルが入ります</div>
               </div>
             </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- topics -->
-    <section class="p-topics l-topics">
+    <section class="p-topics l-topics" id="news">
       <div class="l-inner p-topics__inner">
         <div class="p-topics__news">
           <a href="#" class="p-topics__items">
@@ -371,7 +386,7 @@
     </section>
 
     <!-- contact -->
-    <section class="p-contact p-top__contact">
+    <section class="p-contact p-top__contact" id="contact">
       <div class="l-inner p-contact__inner">
         <div class="p-contact-title p-section-title--contact">お問い合わせ</div>
         <div class="p-contact__text">
