@@ -193,15 +193,15 @@ select::-ms-expand {
 .l-works,
 .l-overview,
 .l-blog {
-  margin-top: 70px;
-  margin-top: 4.375rem;
+  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 @media screen and (min-width: 768px) {
   .l-content,
   .l-works,
   .l-overview,
   .l-blog {
-    margin-top: 6.25rem;
+    margin-top: 9.375rem;
   }
 }
 
@@ -547,14 +547,14 @@ select::-ms-expand {
   content: "";
   height: 1.5px;
   height: 0.09375rem;
-  right: 158px;
-  right: 9.875rem;
+  right: 155px;
+  right: 9.6875rem;
   top: 0;
   -webkit-transform: rotate(-75deg);
           transform: rotate(-75deg);
   -webkit-transform-origin: right top;
           transform-origin: right top;
-  width: 225vw;
+  width: 228vw;
 }
 @media screen and (min-width: 768px) {
   .p-bg-line__second::before {
@@ -576,6 +576,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .p-blog-title {
+    margin-top: 6.25rem;
     font-size: 1.875rem;
   }
 }
@@ -599,8 +600,8 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-section-title--blog::before {
     font-size: 6.875rem;
-    top: 88%;
-    left: 80%;
+    top: 20%;
+    left: 90%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     letter-spacing: 0.02em;
@@ -610,6 +611,7 @@ select::-ms-expand {
 .p-blog__items {
   width: 100%;
   max-width: 600px;
+  max-width: 37.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-blog__items {
@@ -623,8 +625,8 @@ select::-ms-expand {
 }
 
 .p-top-blog {
-  margin-top: 46px;
-  margin-top: 2.875rem;
+  margin-top: 60px;
+  margin-top: 3.75rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -640,8 +642,20 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-blog__item {
     width: calc(33.3% - 16px);
-    max-width: 350px;
+    max-width: 21.875rem;
   }
+}
+.p-blog__item:hover .p-blog__content {
+  background: #333;
+}
+.p-blog__item:hover .p-blog__item--title {
+  color: #fff;
+}
+.p-blog__item:hover .p-blog__item--text {
+  color: #fff;
+}
+.p-blog__item:hover .p-blog__item--date {
+  color: #fff;
 }
 
 .p-blog__item a {
@@ -1225,7 +1239,7 @@ select::-ms-expand {
   .p-section-title--overview::before {
     font-size: 6.875rem;
     top: 65%;
-    left: 25%;
+    left: 27%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     letter-spacing: 0.02em;

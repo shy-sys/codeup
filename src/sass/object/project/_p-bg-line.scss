@@ -37,11 +37,11 @@
 	position: absolute;
 	content: "";
 	height: rem(1.5);
-	right: rem(158);
+	right: rem(155);
 	top: 0;
 	transform: rotate(-75deg);
 	transform-origin: right top;
-	width: 225vw;
+	width: 228vw;
 
 	@include mq("md") {
 		right: 0;
